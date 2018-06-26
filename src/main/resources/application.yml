@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  main:
+    banner-mode: "CONSOLE"
+  application:
+    name: test-consul-vault
+
+logging:
+  level:
+    org: INFO
+    

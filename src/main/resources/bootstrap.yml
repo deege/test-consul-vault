@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    consul:
+      host: punisher.dkistdc.nso.edu
+      port: 8500
+      config:
+        enabled: true  
+      discovery:
+        instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+        prefer-ip-address: true
+        enabled: true
+    vault:
+      token: 0b37be89-6bf8-e301-0ac5-38c488772468
+      scheme: http
